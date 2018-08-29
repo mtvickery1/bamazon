@@ -11,13 +11,8 @@ Use NodeJS to run the .js files on your command line.
 
 ## Demo  
 
-### Customer
-
-<p align='center'>
-<img width='600' src='./images/Bamazon-Customer.mov'>
-</p>
-
+### Link to Customer Demo:
 https://gfycat.com/GroundedWhiteGuillemot
 
-### Manager
+### Link to Manager Demo:
 https://gfycat.com/AgedDenseAltiplanochinchillamouse
