@@ -13,6 +13,9 @@ Use NodeJS to run the .js files on your command line.
 
 ### Customer
 
+<p align='center'>
+<img width='600' src='https://gfycat.com/GroundedWhiteGuillemot'>
+</p>
 https://gfycat.com/GroundedWhiteGuillemot
 
 ### Manager
