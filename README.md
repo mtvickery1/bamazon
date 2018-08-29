@@ -5,11 +5,13 @@ A Command Line Interface app illustrating the basics of NodeJS and SQL by intera
 ## Getting Started
 
 Clone/Download the files in this repository to your computer.  
-Setup an SQL database by running the commands in the schema file.  
+Setup an SQL database by running the commands in the schema file.
+Use npm install to ensure you have the required node modules.
 Use NodeJS to run the .js files on your command line.  
 
 ## Demo  
 
 ### Customer
+https://gfycat.com/GroundedWhiteGuillemot
 
 ### Manager
