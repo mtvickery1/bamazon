@@ -27,3 +27,19 @@ VALUES
 
 
 SELECT * FROM products;
+
+CREATE TABLE departments(
+  department_id INT AUTO_INCREMENT NOT NULL,
+  department_name VARCHAR(50) NOT NULL,
+  PRIMARY KEY(department_id)
+);
+
+INSERT INTO departments (department_name)
+VALUES
+ ("Electronics"),
+ ("Food"),
+ ("Outdoor"),
+ ("Entertainment"),
+ ("Clothing"),
+ ("Seasonal"),
+ ("Garden");

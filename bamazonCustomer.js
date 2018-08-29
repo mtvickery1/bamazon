@@ -1,6 +1,7 @@
 var inquirer = require("inquirer");
 var mysql = require("mysql");
 var chalk = require("chalk");
+var Table = require('cli-table');
 
 var connection = mysql.createConnection({
     host: "127.0.0.1",
@@ -19,14 +20,15 @@ connection.connect(function (err) {
 var displayTable = function () {
     connection.query("SELECT * FROM products", function (err, res) {
         if (err) throw err;
+
+        var table = new Table({ head: ["Item ID", "Product", "Department", "Price", "Quantity"] });
+
         for (var i = 0; i < res.length; i++) {
-            console.log(
-                chalk.red(res[i].item_id) + " - ",
-                chalk.green("Product: ") + res[i].product_name,
-                chalk.green("Department: ") + res[i].department_name,
-                chalk.green("Price: ") + res[i].price,
-                chalk.green("Available: ") + res[i].stock_quantity);
+            table.push([res[i].item_id, res[i].product_name, res[i].department_name, res[i].price, res[i].stock_quantity]);
         }
+
+        console.log(table.toString());
+
         startShopping(res);
     })
 }
@@ -93,9 +95,9 @@ var fulfillOrder = function (chosenProduct, input) {
 var wannaBuyMore = function () {
     inquirer.prompt([
         {
-        name: "buyMore",
-        type: "confirm",
-        message: "Would you like to purchase anything else?",
+            name: "buyMore",
+            type: "confirm",
+            message: "Would you like to purchase anything else?",
         }
     ]).then(function (input) {
         if (input.buyMore) {
