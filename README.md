@@ -12,6 +12,8 @@ Use NodeJS to run the .js files on your command line.
 ## Demo  
 
 ### Customer
-https://gfycat.com/GroundedWhiteGuillemot
+
+<iframe src="https://gfycat.com/GroundedWhiteGuillemot" height="200" width="300"></iframe>
+
 
 ### Manager
